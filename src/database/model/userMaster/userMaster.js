@@ -29,5 +29,7 @@ async function UserMaster(sequelize) {
     });
 }
 
+
+
 module.exports = {UserMaster};
 

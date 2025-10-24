@@ -13,7 +13,7 @@ async function databaseInitialize() {
     try{
         await schemaCreation(sequelize , 'auth');
         await UserMaster(sequelize);
-        await sequelize.sync({force:true});
+        await sequelize.sync({force:false});
 
     }catch(err){
         console.error("Error! while initializing the database" , err);
